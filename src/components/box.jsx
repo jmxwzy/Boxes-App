@@ -14,7 +14,7 @@ class Box extends Component {
         this.setState({
             x:  this.state.x - step
         });
-        console.log("x: ", this.state.x);
+        // console.log("x: ", this.state.x);
     };
 
     handleClickRight = (step) =>  {
@@ -22,7 +22,7 @@ class Box extends Component {
         this.setState({
             x:  this.state.x + step
         });
-        console.log("x: ", this.state.x);
+        // console.log("x: ", this.state.x);
     };
 
     handleClickLeftTmp = () => {
@@ -30,6 +30,8 @@ class Box extends Component {
     }
 
     render() { 
+        console.log(this.props); // 通过this.props属性可以从上到下传递数据。
+
         return ( // 返回渲染的html
             // 当子节点数量大于1时，可以用<div>或<React.Fragment>将其括起来。
             // JSX中使用{}嵌入表达式。
