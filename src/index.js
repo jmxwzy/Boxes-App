@@ -7,7 +7,7 @@ import Boxes from './components/boxes';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode> // 有这个标签会使得react初始化的时候会执行打印两次
     <Boxes></Boxes>
-  </React.StrictMode>
+  // </React.StrictMode>
 );
