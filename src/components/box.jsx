@@ -15,7 +15,7 @@ class Box extends Component {
                 {this.props.children[3]}
                 <button type="button" onClick={this.props.onClickLeft} className="btn btn-primary m-2">left</button>
                 <button type="button" onClick={this.props.onClickRight} className="btn btn-success m-2">right</button>
-                <button type="button" onClick={() => {this.props.onDelete(this.props.id)}} className="btn btn-danger m-2">Delete</button>
+                <button type="button" onClick={() => {this.props.onDelete(this.props.box.id)}} className="btn btn-danger m-2">Delete</button>
                 {/* {this.state.colors.length === 0 && <p>No color</p>}
                 {this.state.colors.map(color => (
                     <div key={color}>{color}</div>
