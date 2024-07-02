@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 
 
 class Box extends Component {
+
+    componentWillUnmount() {
+        console.log('Box - Unmount');
+    }
+
     render() { 
         // console.log(this.props); // 通过this.props属性可以从上到下传递数据。
 

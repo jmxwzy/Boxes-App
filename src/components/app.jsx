@@ -14,6 +14,21 @@ class App extends Component {
         ],
     }
 
+    componentDidUpdate(prevProps, prevState) {
+        console.log("App - Updated");
+        console.log("prevProps", prevProps);
+        console.log("prevState", prevState);
+    }
+
+    componentDidMount() {
+        console.log("App - Mounted");
+    }
+
+    constructor() {
+        super();
+        console.log("App - Constructor");
+    }
+
     handleReset = () => {
         const boxes = this.state.boxes.map((box) => {
             return {
@@ -63,6 +78,8 @@ class App extends Component {
     }
 
     render() { 
+        console.log("App - Rendered");
+
         return (
             <React.Fragment>
                 <NavBar boxesCount={this.state.boxes.filter(box => box.x !== 0).length}></NavBar>
